@@ -3080,6 +3080,48 @@
 </head>
 
 <body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="wp-singular page-template page-template-elementor_header_footer page page-id-3943 wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-desktop astra-dark-mode-enable ast-page-builder-template ast-no-sidebar astra-4.11.12 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-template-full-width elementor-kit-28 elementor-page elementor-page-3943">
+    <div class="moje-menu-mobilne">
+    <a href="https://mikolajmet.github.io/Lumina-studio/index.html">Główna</a>
+    <a href="https://mikolajmet.github.io/Lumina-studio/realizacje/index.html">Realizacje</a>
+    <a href="https://mikolajmet.github.io/Lumina-studio/kontakt/index.html">Kontakt</a>
+</div>
+
+<style>
+/* Na komputerze ukrywamy to menu całkowicie */
+.moje-menu-mobilne {
+    display: none;
+}
+
+/* Włącza się tylko na telefonach i tabletach */
+@media (max-width: 921px) {
+    /* Ukrywamy stary, zepsuty nagłówek Astry na telefonie */
+    .site-header, #masthead, .ast-mobile-header-wrap { 
+        display: none !important; 
+    }
+    
+    /* Tworzymy nasz własny, ładny nagłówek mobilny */
+    .moje-menu-mobilne {
+        display: flex !important;
+        justify-content: center;
+        gap: 25px;
+        background-color: #ffffff;
+        padding: 15px 0;
+        border-bottom: 1px solid #eaeaea;
+        position: sticky;
+        top: 0;
+        z-index: 999999 !important;
+    }
+    
+    /* Styl przycisków w menu */
+    .moje-menu-mobilne a {
+        text-decoration: none !important;
+        color: #333333 !important;
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+</style>
 
     <a class="skip-link screen-reader-text" href="#content" title="Przejdź do treści">
     		Przejdź do treści</a>
