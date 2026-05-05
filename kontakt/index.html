@@ -3048,6 +3048,35 @@
     <link rel="icon" href="https://mikolajmet.github.io/Lumina-studio/wp-content/uploads/2026/05/sketch-300x300.png" sizes="192x192"/>
     <link rel="apple-touch-icon" href="https://mikolajmet.github.io/Lumina-studio/wp-content/uploads/2026/05/sketch-300x300.png"/>
     <meta name="msapplication-TileImage" content="https://mikolajmet.github.io/Lumina-studio/wp-content/uploads/2026/05/sketch-300x300.png"/>
+<style>
+@media (max-width: 921px) {
+    /* 1. Ukrywamy zepsuty przycisk 3 pasków (hamburgera) */
+    .ast-mobile-menu-trigger-minimal, 
+    .ast-button-wrap, 
+    .elementor-menu-toggle { 
+        display: none !important; 
+    }
+    
+    /* 2. Wymuszamy, aby ukryte menu mobilne było zawsze widoczne na ekranie */
+    .ast-mobile-header-wrap .main-header-bar-navigation,
+    .elementor-nav-menu--dropdown,
+    #ast-mobile-navigation { 
+        display: block !important; 
+        visibility: visible !important;
+        opacity: 1 !important;
+        height: auto !important;
+    }
+
+    /* 3. Układamy linki w menu obok siebie, żeby wyglądały estetycznie na telefonie */
+    .main-header-bar-navigation ul {
+        display: flex !important;
+        justify-content: center !important;
+        gap: 15px !important;
+        padding: 10px 0 !important;
+        list-style: none !important;
+    }
+}
+</style>
 </head>
 
 <body itemtype='https://schema.org/WebPage' itemscope='itemscope' class="wp-singular page-template page-template-elementor_header_footer page page-id-3943 wp-theme-astra ehf-template-astra ehf-stylesheet-astra ast-desktop astra-dark-mode-enable ast-page-builder-template ast-no-sidebar astra-4.11.12 ast-single-post ast-replace-site-logo-transparent ast-inherit-site-logo-transparent ast-hfb-header ast-normal-title-enabled elementor-default elementor-template-full-width elementor-kit-28 elementor-page elementor-page-3943">
